@@ -37,10 +37,10 @@ github.com/mitchellh/copystructure v1.2.0 h1:vpKXTN4ewci03Vljg/q9QvCGUDttBOGBIa1
 github.com/mitchellh/copystructure v1.2.0/go.mod h1:qLl+cE2AmVv+CoeAwDPye/v+N2HKCj9FbZEVFJRxO9s=
 github.com/mitchellh/reflectwalk v1.0.2 h1:G2LzWKi524PWgd3mLHV8Y5k7s6XUvT0Gef6zxSIeXaQ=
 github.com/mitchellh/reflectwalk v1.0.2/go.mod h1:mSTlrgnPZtwu0c4WaC2kGObEpuNDbx0jmZXqmk4esnw=
-github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3 v3.0.0-20250324154321-6abce3ddfc29 h1:w+JJsJdX/7jk8l3U6WvshzcEsoGjey0/2pFpJFqJRIk=
-github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3 v3.0.0-20250324154321-6abce3ddfc29/go.mod h1:D20DFo/BIVmUPQgH90rq9pDs5u7y3RvPJ318Lb5h2dA=
-github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250324061806-227fc2609b0a h1:wYquhS5RpMSi2+2KCNF81maS+rheCx/Kfs5XD6cJ2K4=
-github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250324061806-227fc2609b0a/go.mod h1:1EKZPAtxng7sFKRm+MjnsQ4wJfe1+/zxjuhli6kIRLQ=
+github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3 v3.0.0-20250410104403-5fc53287436a h1:+emTIxzf0uweiLhNEEJ5VUNHeHco0ljZgJa/WJZ0Zz0=
+github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3 v3.0.0-20250410104403-5fc53287436a/go.mod h1:gpHwg4cXyapeHXKEZU3LgnWgd2nk39UN2+Y0sr19i5Q=
+github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250410090100-eded4c69a462 h1:5nwCXm+cCxzGpqvUwrTS4xzgzK4WCC82xBj6yfCbln0=
+github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250410090100-eded4c69a462/go.mod h1:1EKZPAtxng7sFKRm+MjnsQ4wJfe1+/zxjuhli6kIRLQ=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rabbitmq/amqp091-go v1.10.0 h1:STpn5XsHlHGcecLmMFCtg7mqq0RnD+zFr4uzukfVhBw=
