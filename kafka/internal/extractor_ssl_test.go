@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func Test_SslExtractor_sslCert_Extract(t *testing.T) {
+func Test_SslExtractor_sslCertMTLS_Extract(t *testing.T) {
 	assertions := require.New(t)
 	extractor := &SslExtractor{}
 	connectionProperties := extractor.Extract(model.TopicAddress{
@@ -20,10 +20,16 @@ func Test_SslExtractor_sslCert_Extract(t *testing.T) {
 			"SSL":       {"localkafka.kafka-cluster:9094"},
 		},
 		CACert: "test-caCert",
+		Credentials: map[string]model.TopicUserCredentials{
+			"sslCert": {
+				ClientCert: "test-clientCert",
+				ClientKey:  "test-clientKey",
+			},
+		},
 	})
 	assertions.NotNil(connectionProperties)
-	assertions.Equal("", connectionProperties.ClientCert)
-	assertions.Equal("", connectionProperties.ClientKey)
+	assertions.Equal(wrapCert("test-clientCert"), connectionProperties.ClientCert)
+	assertions.Equal(wrapClientKey("test-clientKey"), connectionProperties.ClientKey)
 	assertions.Equal(wrapCert("test-caCert"), connectionProperties.CACert)
 	assertions.Equal("", connectionProperties.SaslMechanism)
 	assertions.Equal("localkafka.kafka-cluster:9094", connectionProperties.BootstrapServers[0])
