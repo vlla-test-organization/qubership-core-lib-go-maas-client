@@ -18,7 +18,7 @@ func (e *SslExtractor) Extract(topic model.TopicAddress) *model.TopicConnectionP
 	if servers != nil {
 		caCert := topic.CACert
 		if caCert != "" {
-			return &model.TopicConnectionProperties{
+			topicConfig := &model.TopicConnectionProperties{
 				TopicName:        topic.TopicName,
 				NumPartitions:    topic.NumPartitions,
 				Protocol:         protocol,
@@ -26,7 +26,15 @@ func (e *SslExtractor) Extract(topic model.TopicAddress) *model.TopicConnectionP
 				SaslMechanism:    "",
 				CACert:           wrapCert(caCert),
 			}
+
+			credentials := topic.GetCredentials("sslCert")
+			if credentials != nil {
+				topicConfig.ClientCert = wrapCert(credentials.ClientCert)
+				topicConfig.ClientKey = wrapClientKey(credentials.ClientKey)
+				return topicConfig
+			}
 		}
+
 	}
 	return nil
 }
