@@ -31,8 +31,8 @@ func (e *SslExtractor) Extract(topic model.TopicAddress) *model.TopicConnectionP
 			if credentials != nil {
 				topicConfig.ClientCert = wrapCert(credentials.ClientCert)
 				topicConfig.ClientKey = wrapClientKey(credentials.ClientKey)
-				return topicConfig
 			}
+			return topicConfig
 		}
 
 	}
