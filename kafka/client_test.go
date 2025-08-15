@@ -18,13 +18,13 @@ import (
 
 	"github.com/go-resty/resty/v2"
 	"github.com/gorilla/websocket"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/internal"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/util"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/watch"
-	goStompWs "github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3"
 	"github.com/stretchr/testify/require"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/internal"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/util"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/watch"
+	goStompWs "github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3"
 )
 
 const testNamespace = "test-namespace"
@@ -296,7 +296,7 @@ func Test_WatchTenantTopics(t *testing.T) {
 			_, _ = w.Write(bytes)
 		} else if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 			var err error
 			wsConn, err = (&websocket.Upgrader{}).Upgrade(w, r, nil)
 			assertions.NoError(err)
@@ -398,7 +398,7 @@ func Test_WatchTenantTopicNotFound(t *testing.T) {
 			}
 		} else if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 			var err error
 			wsConn, err = (&websocket.Upgrader{}).Upgrade(w, r, nil)
 			assertions.NoError(err)
@@ -483,7 +483,7 @@ func Test_WatchTenantTopicsWithRetry(t *testing.T) {
 			_, _ = w.Write(bytes)
 		} else if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 			var err error
 			wsConn, err = (&websocket.Upgrader{}).Upgrade(w, r, nil)
 			assertions.NoError(err)
@@ -546,7 +546,7 @@ func Test_WatchTenantTopicsConnectionError(t *testing.T) {
 	ts := createTestServer(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 
 			// imitate TM connection error
 			w.WriteHeader(http.StatusInternalServerError)
@@ -607,7 +607,7 @@ func Test_WatchTenantTopicsReConnectionAfterError(t *testing.T) {
 			_, _ = w.Write(bytes)
 		} else if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 
 			if connectAttempts > 0 {
 				connectAttempts--
@@ -724,7 +724,7 @@ func Test_WatchTenantTopicsClientNotifiedAboutConnectError(t *testing.T) {
 			_, _ = w.Write(bytes)
 		} else if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 
 			if testPhase != 0 {
 				w.WriteHeader(http.StatusInternalServerError)
@@ -801,7 +801,7 @@ func Test_WatchTenantTopicsSubscribeTimeout(t *testing.T) {
 	ts := createTestServer(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 
 			var err error
 			wsConn, err = (&websocket.Upgrader{}).Upgrade(w, r, nil)
@@ -877,7 +877,7 @@ func Test_WatchTenantTopicsInfiniteLoop(t *testing.T) {
 			_, _ = w.Write(bytes)
 		} else if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 
 			attempt++
 			fmt.Printf("attempt=%d\n", attempt)
@@ -972,7 +972,7 @@ func Test_WatchTenantTopicsMaasResponseErr(t *testing.T) {
 			w.WriteHeader(http.StatusInternalServerError)
 		} else if r.Method == resty.MethodGet &&
 			strings.HasPrefix(r.URL.Path, "/api/v4/tenant-manager/watch") &&
-			r.Header.Get("Authorization") == "Bearer " + testTokenValue {
+			r.Header.Get("Authorization") == "Bearer "+testTokenValue {
 
 			var err error
 			wsConn, err = (&websocket.Upgrader{}).Upgrade(w, r, nil)

@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/util"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/watch"
-	go_stomp_websocket "github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/util"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/watch"
+	go_stomp_websocket "github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3"
 )
 
 type TenantWatchClient[T Resource] interface {

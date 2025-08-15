@@ -2,7 +2,7 @@ package rabbit
 
 import (
 	"github.com/go-resty/resty/v2"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/rabbit/internal"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/rabbit/internal"
 )
 
 func NewClient(namespace string, maasAgentUrl string, httpClient *resty.Client) MaasClient {

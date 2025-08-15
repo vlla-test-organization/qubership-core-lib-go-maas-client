@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
 	"github.com/stretchr/testify/require"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
 )
 
 var (

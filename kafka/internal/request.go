@@ -1,6 +1,6 @@
 package internal
 
-import "github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
+import "github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
 
 type TopicRequest struct {
 	Name              string             `json:"name,omitempty"`

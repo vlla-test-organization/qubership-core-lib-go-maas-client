@@ -6,7 +6,7 @@ import (
 	"sort"
 
 	"github.com/gorilla/websocket"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
 )
 
 type TopicAddress struct {

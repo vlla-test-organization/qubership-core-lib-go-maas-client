@@ -3,8 +3,8 @@ package kafka
 import (
 	"context"
 
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
 )
 
 type MaasClient interface {

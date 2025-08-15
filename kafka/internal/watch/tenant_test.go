@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/watch"
-	go_stomp_websocket "github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3"
 	"github.com/stretchr/testify/require"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/watch"
+	go_stomp_websocket "github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3"
 )
 
 const (

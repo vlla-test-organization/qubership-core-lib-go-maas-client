@@ -5,12 +5,12 @@ import (
 
 	"github.com/go-resty/resty/v2"
 	"github.com/gorilla/websocket"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/internal"
-	watchInternal "github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/internal/watch"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/util"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/watch"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/internal"
+	watchInternal "github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/internal/watch"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/util"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/watch"
 )
 
 func NewClient(namespace string, maasAgentUrl string, tenantManagerUrl string, httpClient *resty.Client,

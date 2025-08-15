@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/netcracker/qubership-core-lib-go/v3/logging"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/internal/watch"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/util"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/internal/watch"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/util"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/logging"
 )
 
 var logger logging.Logger

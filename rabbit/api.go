@@ -3,9 +3,9 @@ package rabbit
 import (
 	"context"
 
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/rabbit/model"
 	amqp "github.com/rabbitmq/amqp091-go"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/rabbit/model"
 )
 
 type MaasClient interface {

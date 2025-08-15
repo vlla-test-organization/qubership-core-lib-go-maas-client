@@ -1,6 +1,6 @@
 package internal
 
-import "github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
+import "github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
 
 type SaslSslExtractor struct {
 }

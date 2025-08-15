@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/internal"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/internal"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
 )
 
 type ConnectionPropertiesExtractor interface {

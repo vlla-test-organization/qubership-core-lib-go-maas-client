@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
 	"github.com/stretchr/testify/require"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
 )
 
 const testNamespace = "test-namespace"

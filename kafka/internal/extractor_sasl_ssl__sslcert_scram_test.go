@@ -3,9 +3,9 @@ package internal
 import (
 	"testing"
 
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
 	"github.com/stretchr/testify/require"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
 )
 
 func Test_SaslSslExtractor_sslCert_SCRAM_Extract(t *testing.T) {
