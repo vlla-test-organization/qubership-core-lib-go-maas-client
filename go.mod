@@ -11,8 +11,8 @@ retract (
 require (
 	github.com/go-resty/resty/v2 v2.16.5
 	github.com/gorilla/websocket v1.5.3
-	github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3 v3.0.2
-	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.2
+	github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3 v3.0.3
+	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.3
 	github.com/rabbitmq/amqp091-go v1.10.0
 	github.com/stretchr/testify v1.10.0
 )
