@@ -11,8 +11,8 @@ require (
 	github.com/gorilla/websocket v1.5.3
 	github.com/rabbitmq/amqp091-go v1.10.0
 	github.com/stretchr/testify v1.10.0
-	github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3 v3.0.6
-	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.6
+	github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3 v3.0.7
+	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.7
 )
 
 require (
